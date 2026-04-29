@@ -78,15 +78,15 @@ body {
   background-attachment: fixed;
   color: #000;
   font-weight: bold;
-  .section {
-    margin: 40px 0;
-    font-size: 24px;
-    text-align: center;
-  }
+  text-align: center;
   font-family: "DartsFont", sans-serif;
   margin: 0;
 }
 
+.section {
+  margin: 40px 0;
+  font-size: 24px;
+}
 
 /* トップページなどで使う共通ボックス */
 .box {
@@ -112,7 +112,6 @@ body {
 
 .menu {
   margin: 40px 0;
-  text-align: center;
 }
 
 .menu a {
