@@ -81,6 +81,7 @@ body {
   text-align: center;
   font-family: "DartsFont", sans-serif;
   margin: 0;
+  overflow-y: scroll;
 }
 
 .section {
