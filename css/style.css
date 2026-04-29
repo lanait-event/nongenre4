@@ -128,7 +128,9 @@ body {
   border-bottom: 4px solid #c2a070;
 }
 
-.menu a:hover {
+
+.menu a:hover,
+a:hover {
   text-decoration: underline;
 }
 
