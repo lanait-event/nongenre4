@@ -1,8 +1,8 @@
 /* メニューを4分割グリッド＆非表示項目もスペース確保 */
 .menu {
   margin: 40px 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  justify-content: center;
   gap: 8px;
   max-width: 900px;
   margin-left: auto;
@@ -30,8 +30,16 @@
   cursor: default;
 }
 .menu span.menu-placeholder {
-  background: transparent;
-  border: none;
+  font-size: 32px;
+  min-width: 0;
+  padding: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  display: inline-block;
+  border-top: 4px solid #c2a070;
+  border-bottom: 4px solid #c2a070;
+  background: rgba(255,255,255,0.0);
   pointer-events: none;
 }
 @media (max-width: 700px) {
