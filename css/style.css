@@ -111,21 +111,28 @@ body {
   margin: 40px auto;
 }
 
-.menu {
+ .menu {
   margin: 40px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  justify-content: center;
+  gap: 10px;
 }
 
-.menu a {
+ .menu a {
   color: #000;
   margin: 0 10px;
   text-decoration: none;
   font-size: 32px;
-  display: inline-block;
   min-width: 140px;
   padding: 20px;
   background: rgba(255,255,255,0.88);
   border-top: 4px solid #c2a070;
   border-bottom: 4px solid #c2a070;
+  flex: 0 0 auto;
+  display: block;
 }
 
 .menu a:hover {
