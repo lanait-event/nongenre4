@@ -1,3 +1,39 @@
+/* メニューを4分割グリッド＆非表示項目もスペース確保 */
+.menu {
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu a, .menu span.menu-placeholder {
+  font-size: 32px;
+  min-width: 0;
+  padding: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  display: inline-block;
+  border-top: 4px solid #c2a070;
+  border-bottom: 4px solid #c2a070;
+  background: rgba(255,255,255,0.88);
+}
+.menu a.disabled {
+  color: #ddd;
+  pointer-events: none;
+}
+.menu a.active {
+  background: #e0d4b8;
+  pointer-events: none;
+  cursor: default;
+}
+.menu span.menu-placeholder {
+  background: transparent;
+  border: none;
+  pointer-events: none;
+}
 @media (max-width: 700px) {
   body {
     font-size: 16px;
@@ -111,29 +147,6 @@ body {
   margin: 40px auto;
 }
 
- .menu {
-  margin: 40px 0;
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  justify-content: center;
-  gap: 10px;
-}
-
- .menu a {
-  color: #000;
-  margin: 0 10px;
-  text-decoration: none;
-  font-size: 32px;
-  min-width: 140px;
-  padding: 20px;
-  background: rgba(255,255,255,0.88);
-  border-top: 4px solid #c2a070;
-  border-bottom: 4px solid #c2a070;
-  flex: 0 0 auto;
-  display: block;
-}
 
 .menu a:hover {
   text-decoration: underline;
